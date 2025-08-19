@@ -1,0 +1,8 @@
+libasound2-dev
+portaudio19-dev
+python3-pyaudio
+espeak
+ffmpeg
+libcairo2-dev
+libgireleaselibffi-dev
+gir1.2-pango-1.0
