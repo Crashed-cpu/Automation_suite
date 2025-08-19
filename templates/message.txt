@@ -1,0 +1,2 @@
+[default]
+Hi {name}, this is our automated message.

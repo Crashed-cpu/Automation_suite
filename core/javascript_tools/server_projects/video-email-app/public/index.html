@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Recorder</h1>
+        
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <div id="startButton" class="button">Start Recording</div>
+            <div id="stopButton" class="button" disabled>Stop Recording</div>
+            <div id="sendButton" class="button" disabled>Send Video</div>
+        </div>
+        
+        <div class="status" id="status">Ready to record</div>
+        
+        <div class="preview">
+            <h3>Recording Preview:</h3>
+            <video id="preview" controls></video>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

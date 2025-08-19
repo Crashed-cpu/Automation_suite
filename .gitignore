@@ -1,0 +1,139 @@
+# Environment variables
+# Global environment files
+.env
+.env.*
+!.env.example
+
+# Environment files in subdirectories
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Local development
+local_settings.py
+db.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment files (except example)
+!.env.example
+
+# Web Scraper Downloads
+scraped_data/data/*
+!scraped_data/data/.gitkeep
+scraped_data/pages/*
+!scraped_data/pages/.gitkeep
+scraped_data/reports/*
+!scraped_data/reports/.gitkeep
+
+# =================================
+# Node.js
+# =================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+build/
+dist/
+.next/
+.nuxt/
+.output/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Cache directories
+.npm
+.eslintcache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class

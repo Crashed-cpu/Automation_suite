@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capture & Send Photo</title>
+  <style>
+    video, canvas { display: block; margin: 10px auto; }
+    button { display: block; margin: 10px auto; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <video id="video" width="320" height="240" autoplay></video>
+  <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+  <button id="capture">Capture Photo</button>
+  <button id="send">Send Email</button>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const captureBtn = document.getElementById('capture');
+    const sendBtn = document.getElementById('send');
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => video.srcObject = stream)
+      .catch(err => console.error("Webcam error:", err));
+
+    captureBtn.onclick = () => {
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      canvas.style.display = 'block';
+    };
+
+    sendBtn.onclick = () => {
+      const imageData = canvas.toDataURL('image/png');
+      fetch('/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: imageData })
+      }).then(res => {
+        if (res.ok) alert("Email sent!");
+        else alert("Failed to send.");
+      });
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Speech to Text</h1>
+        <p>Click the microphone and start speaking to see your speech converted to text.</p>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn">🎤 Start Listening</button>
+            <button id="stopBtn" class="btn btn-secondary" disabled>⏹️ Stop</button>
+            <button id="clearBtn" class="btn btn-secondary">🗑️ Clear Text</button>
+        </div>
+        
+        <div class="status" id="status">Status: Ready</div>
+        
+        <div class="result-container">
+            <div class="result-header">
+                <h3>Transcription:</h3>
+                <button id="copyBtn" class="btn btn-small" title="Copy to clipboard">📋 Copy</button>
+            </div>
+            <div id="result" class="result" contenteditable="true"></div>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ol>
+                <li>Click "Start Listening" and allow microphone access when prompted</li>
+                <li>Speak clearly into your microphone</li>
+                <li>Click "Stop" when you're done</li>
+                <li>Edit the text if needed and copy it</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with the Web Speech API</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
