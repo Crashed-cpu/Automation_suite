@@ -39,9 +39,10 @@ jobs:
         uses: actions/configure-pages@v3
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './portfolio'
+          # Deploy only the portfolio folder
+          path: 'portfolio/'
 
   deploy:
     environment:
