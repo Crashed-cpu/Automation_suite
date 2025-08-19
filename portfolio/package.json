@@ -1,0 +1,11 @@
+{
+  "name": "commandhub-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Build complete'"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0"
+  }
+}
