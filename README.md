@@ -340,4 +340,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 Your Name - the.ayush.factor@gmail.com
-Project Link: [https://github.com/Crashed-cpu/automation-suite](https://github.com/Crashed-cpu/automation-suite)
+Project Link: [https://github.com/Crashed-cpu/Automation-suite](https://github.com/Crashed-cpu/Automation-suite)
