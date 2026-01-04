@@ -339,5 +339,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
-Project Link: [https://github.com/yourusername/automation-suite](https://github.com/yourusername/automation-suite)
+Your Name - the.ayush.factor@gmail.com
+Project Link: [https://github.com/Crashed-cpu/automation-suite](https://github.com/Crashed-cpu/automation-suite)
